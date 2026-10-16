@@ -3,11 +3,21 @@
 /* Set custom variables here */
 
 :root {
-  --bs-primary: #285c4d;
-  --bs-primary-rgb: 40, 92, 77;
+  --bs-body-bg: #F6F3ED;
+  --bs-primary: #2e483a;
+  --bs-primary-rgb: 46, 72, 58;
+  --bs-light: #f6f3ed;
+  --bs-light-rgb: 246, 243, 237;
 } 
 
-
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #204a3e;
+  --bs-btn-hover-border-color: #204a3e;
+  --bs-btn-active-bg: #204a3e;
+  --bs-btn-active-border-color: #204a3e;
+}
 
 .navbar-brand {
   color: #F6F3ED;
@@ -29,6 +39,14 @@ h1, h2, h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#hero h1 {
+  font-size: 2rem;
+}
+
+#hero .container {
+  padding-top: 24px;
 }
 
 #hero .d-flex {
