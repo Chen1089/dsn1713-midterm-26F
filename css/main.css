@@ -8,6 +8,20 @@
   --bs-primary-rgb: 46, 72, 58;
   --bs-light: #f6f3ed;
   --bs-light-rgb: 246, 243, 237;
+  --bs-dark: #243a2f;
+  --bs-dark-rgb: 36, 58, 47;
+  --bs-body-color: #212529;
+  --bs-body-font-family: "Sarala", sans-serif;
+  --bs-body-font-size: 1rem;
+
+  --font-heading-family: "Merriweather", serif;
+  --font-hero: 2rem;
+  --font-heading: 2rem;
+  --font-subheading: 1.5rem;
+  --font-intro: 1.2rem;
+  --font-testimonial: 1.25rem;
+  --section-title-spacing: 60px;
+  --hero-bg: #e4e6db;
 } 
 
 .btn-primary {
@@ -15,19 +29,19 @@
   --bs-btn-bg: var(--bs-primary);
   --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-color: var(--bs-light);
-  --bs-btn-hover-bg: #243a2f;
-  --bs-btn-hover-border-color: #243a2f;
+  --bs-btn-hover-bg: var(--bs-dark);
+  --bs-btn-hover-border-color: var(--bs-dark);
   --bs-btn-active-color: var(--bs-light);
-  --bs-btn-active-bg: #243a2f;
-  --bs-btn-active-border-color: #243a2f;
+  --bs-btn-active-bg: var(--bs-dark);
+  --bs-btn-active-border-color: var(--bs-dark);
 }
 
 .navbar-brand {
-  color: #F6F3ED;
+  color: var(--bs-light);
 }
 
 .section-intro {
-  font-size: 1.2rem;
+  font-size: var(--font-intro);
   line-height: 1.6;
   max-width: 850px;
   margin-left: auto;
@@ -35,16 +49,26 @@
 }
 
 body {
-  font-family: "Sarala", sans-serif;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  color: var(--bs-body-color);
 }
 
 h1, h2, h3 {
-  font-family: "Merriweather", serif;
+  font-family: var(--font-heading-family);
+}
+
+section h2 {
+  font-size: var(--font-heading);
+}
+
+section h3 {
+  font-size: var(--font-subheading);
 }
 
 #hero {
   height: 800px;
-  background-color: #E4E6DB;
+  background-color: var(--hero-bg);
   background-image: url(../images/hero-bg-img.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -53,12 +77,9 @@ h1, h2, h3 {
 }
 
 #hero h1 {
-  font-size: 2rem;
+  font-size: var(--font-hero);
 }
 
-#hero .d-flex {
-  height: 800px;
-}
 
 section .row + .btn {
   margin-top: 40px;
@@ -73,12 +94,8 @@ section .row + .btn {
   margin-bottom: 60px;
 }
 
-.pick-plan-wrapper {
-  padding-top: 40px;
-}
-
 .smarter-way {
-  border-top: 1px solid #2e483a;
+  border-top: 1px solid var(--bs-dark);
 }
 
 .list-group-item {
@@ -86,15 +103,19 @@ section .row + .btn {
 }
 
 .smarter-way-title {
-  margin-bottom: 60px;
+  margin-bottom: var(--section-title-spacing);
 }
 
 .testimonials-title {
-  margin-bottom: 60px;
+  margin-bottom: var(--section-title-spacing);
+}
+
+blockquote p {
+  font-size: var(--font-testimonial);
 }
 
 .faq-title {
-  margin-bottom: 60px;
+  margin-bottom: var(--section-title-spacing);
 }
 
 #cta {
